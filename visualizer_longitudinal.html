@@ -1,9 +1,8 @@
-<!DOCTYPE html><html lang="th"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>MelodyLab v5.47 - คลื่นตามยาว</title><meta name="description" content="MelodyLab ห้องทดลองเสียงและเก็บข้อมูล ด้วยมือถือ"><meta name="theme-color" content="#0f172a"><link rel="manifest" href="manifest.json"><link rel="icon" type="image/png" href="icon-192.png"><link rel="apple-touch-icon" href="icon-192.png"><link rel="stylesheet" href="style.css"><meta name="melodylab-build-version" content="v5.47-longitudinal-layout-fix">
+<!DOCTYPE html><html lang="th"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>MelodyLab v5.48 - คลื่นตามยาว</title><meta name="description" content="MelodyLab ห้องทดลองเสียงและเก็บข้อมูล ด้วยมือถือ"><meta name="theme-color" content="#0f172a"><link rel="manifest" href="manifest.json"><link rel="icon" type="image/png" href="icon-192.png"><link rel="apple-touch-icon" href="icon-192.png"><link rel="stylesheet" href="style.css"><meta name="melodylab-build-version" content="v5.48-longitudinal-text-tune">
 </head><body class="detailPage page-visualizer"><header><div class="wrap nav detailNav"><button class="backBtn" onclick="location.href=\'visualizer.html\'">←</button><a class="brand" href="index.html"><img src="icon-192.png" alt="MelodyLab"><span>Longitudinal Wave (คลื่นตามยาว)</span></a></div></header><main class="wrap detailMain" data-current="visualizer">
 <section class="section activeDetail visualizerSinglePage visualizerTemplatePage longitudinalFocusPage" id="visualizer" data-viz-mode="longitudinal">
   <div class="sectionHead templateHead">
     <div>
-      <div class="miniTag">แม่แบบภาพจำลอง · โหมดเน้นเฉพาะหัวข้อ</div>
       <h2>Longitudinal Wave (คลื่นตามยาว)</h2>
       <p class="sectionLead">ภาพจำลองหลักสำหรับสังเกตการเคลื่อนที่ของคลื่นเสียงและการเคลื่อนที่ของอนุภาค</p>
     </div>
@@ -41,7 +40,7 @@
           <div class="vizConceptStrip compactExplainStrip">
             <div class="conceptChip"><span class="chipIcon">→</span><div><b>Wave propagation (ทิศทางการเคลื่อนที่ของคลื่น)</b><small>ใช้สังเกตทิศทางการเคลื่อนที่ของคลื่น</small></div></div>
             <div class="conceptChip"><span class="chipIcon">↔</span><div><b>Particle vibration (การสั่นของอนุภาค)</b><small>อนุภาคสั่นไป-กลับในแนวเดียวกับคลื่น</small></div></div>
-            <div class="conceptChip"><span class="chipIcon">A</span><div><b>Amplitude A (แอมพลิจูด A)</b><small>ขนาดการกระจัดมากที่สุดจากตำแหน่งสมดุล</small></div></div>
+            <div class="conceptChip"><span class="chipIcon">A</span><div><b>Amplitude A (แอมพลิจูด)</b><small>ขนาดการกระจัดมากที่สุดจากตำแหน่งสมดุล</small></div></div>
             <div class="conceptChip accent"><span class="chipIcon dot"></span><div><b>จุดสังเกต</b><small>อนุภาคสีแดงใช้เป็นอนุภาคอ้างอิง</small></div></div>
           </div>
           <div class="templateUnderCanvas explainGrid">
@@ -50,7 +49,7 @@
               <ul>
                 <li>ลูกศรคลื่นใช้แสดงทิศทางการเคลื่อนที่ของคลื่น</li>
                 <li>อนุภาคเคลื่อนที่ไป-กลับในแนวเดียวกับคลื่น</li>
-                <li>Amplitude A (แอมพลิจูด A) หมายถึงการกระจัดสูงสุดจากตำแหน่งสมดุล</li>
+                <li>Amplitude A (แอมพลิจูด) หมายถึงการกระจัดสูงสุดจากตำแหน่งสมดุล</li>
               </ul>
             </div>
             <div class="templateLegendCard">
@@ -64,11 +63,11 @@
     </div>
 
     <div class="card controlViz templateControlViz longitudinalControlViz">
-      <div class="panelTitleStack"><h3>พารามิเตอร์</h3><p class="panelSubtext">ปรับค่าแล้วสังเกตการเปลี่ยนแปลงของภาพจำลอง</p></div>
-      <div class="field richField"><label>Frequency f (ความถี่ f) (Hz) <span id="vizFreqLabel" class="valueBadge">440 Hz</span></label><input id="vizFreq" type="range" min="100" max="1000" step="10" value="440"></div>
-      <div class="field richField"><label>Amplitude A (แอมพลิจูด A) <span id="vizAmpLabel" class="valueBadge">0.70</span></label><input id="vizAmp" type="range" min="0.1" max="1.0" step="0.05" value="0.70"></div>
-      <div class="field richField"><label>Wave Speed v (อัตราเร็วคลื่น v) (m/s) <span id="vizSpeedLabel" class="valueBadge">343 m/s</span></label><input id="vizSpeed" type="range" min="250" max="400" step="1" value="343"></div>
-      <div class="field richField"><label>Phase / Time Speed <span id="vizTimeLabel" class="valueBadge">1.0×</span></label><input id="vizTimeSpeed" type="range" min="0.1" max="3.0" step="0.1" value="1.0"></div>
+      <div class="panelTitleStack"><h3>Parameters (ตัวแปรควบคุม)</h3><p class="panelSubtext">ปรับค่าแล้วสังเกตการเปลี่ยนแปลงของภาพจำลอง</p></div>
+      <div class="field richField"><label>Frequency f (ความถี่) (Hz) <span id="vizFreqLabel" class="valueBadge">440 Hz</span></label><input id="vizFreq" type="range" min="100" max="1000" step="10" value="440"></div>
+      <div class="field richField"><label>Amplitude A (แอมพลิจูด) <span id="vizAmpLabel" class="valueBadge">0.70</span></label><input id="vizAmp" type="range" min="0.1" max="1.0" step="0.05" value="0.70"></div>
+      <div class="field richField"><label>Wave Speed v (อัตราเร็วคลื่น) (m/s) <span id="vizSpeedLabel" class="valueBadge">343 m/s</span></label><input id="vizSpeed" type="range" min="250" max="400" step="1" value="343"></div>
+      <div class="field richField"><label>Time Speed (อัตราเวลา) <span id="vizTimeLabel" class="valueBadge">1.0×</span></label><input id="vizTimeSpeed" type="range" min="0.1" max="3.0" step="0.1" value="1.0"></div>
     </div>
   </div>
 
